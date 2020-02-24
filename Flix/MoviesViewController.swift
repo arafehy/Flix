@@ -68,8 +68,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Loading details ")
-        
         // Find the selected movie
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
