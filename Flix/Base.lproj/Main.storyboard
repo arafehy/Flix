@@ -63,6 +63,7 @@
                                             <outlet property="posterView" destination="O9x-nI-pdZ" id="Ia0-xY-V6X"/>
                                             <outlet property="synopsisLabel" destination="98u-wz-Eht" id="UcC-ZN-1hr"/>
                                             <outlet property="titleLabel" destination="5er-Wa-Lln" id="FLG-kZ-xGP"/>
+                                            <segue destination="Sdi-Qv-plU" kind="show" id="JhK-CN-ABE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
