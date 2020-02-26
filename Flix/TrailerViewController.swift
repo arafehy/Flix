@@ -10,14 +10,13 @@ import UIKit
 import WebKit
 
 class TrailerViewController: UIViewController {
-
+    
     @IBOutlet weak var webView: WKWebView!
     var trailerURL: String! = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         let url = URL(string: trailerURL!)
         let request = URLRequest(url: url!)
         webView.load(request)
@@ -26,5 +25,5 @@ class TrailerViewController: UIViewController {
     @IBAction func doneButtonTapped(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-
+    
 }

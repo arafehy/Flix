@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 
 class MovieDetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var backdropView: UIImageView!
     @IBOutlet weak var posterView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,8 +21,7 @@ class MovieDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         titleLabel.text = movie["title"] as? String
         titleLabel.sizeToFit()
         
@@ -59,7 +58,7 @@ class MovieDetailsViewController: UIViewController {
     }
     
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var key = ""
         for trailer in trailers {
@@ -77,5 +76,5 @@ class MovieDetailsViewController: UIViewController {
         let trailerViewController = segue.destination as! TrailerViewController
         trailerViewController.trailerURL = trailerURL
     }
-
+    
 }
