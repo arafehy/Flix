@@ -122,6 +122,7 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="posterView" destination="nGi-N4-3Uy" id="bMQ-cY-FXI"/>
+                                            <segue destination="Sdi-Qv-plU" kind="show" id="AtB-db-m3p"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -183,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pjw-7I-PXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-449" y="2225"/>
+            <point key="canvasLocation" x="138" y="2259"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="UUY-Eq-RoP">
@@ -247,4 +248,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AtB-db-m3p"/>
+    </inferredMetricsTieBreakers>
 </document>
